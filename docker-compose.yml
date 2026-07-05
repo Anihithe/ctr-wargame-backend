@@ -1,0 +1,17 @@
+﻿services:
+  ctr-db:
+    image: postgres:16-alpine
+    container_name: ctr-wargame-db
+    environment:
+      POSTGRES_USER: ctr_admin
+      POSTGRES_PASSWORD: ctr_pwd
+      POSTGRES_DB: ctr_wargame_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - ctr-db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  ctr-db-data:
+    driver: local

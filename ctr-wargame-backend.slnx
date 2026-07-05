@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CtrWargame.Application/CtrWargame.Application.csproj" />
+    <Project Path="src/CtrWargame.Domain/CtrWargame.Domain.csproj" />
+    <Project Path="src/CtrWargame.Infrastructure/CtrWargame.Infrastructure.csproj" />
+    <Project Path="src/CtrWargame.WebApi/CtrWargame.WebApi.csproj" />
+  </Folder>
+</Solution>
