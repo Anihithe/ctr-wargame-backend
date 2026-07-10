@@ -8,12 +8,21 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.9"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.9">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Microsoft.OpenApi" Version="2.10.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\CtrWargame.Application\CtrWargame.Application.csproj" />
       <ProjectReference Include="..\CtrWargame.Infrastructure\CtrWargame.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Endpoints\" />
+      <Folder Include="Middlewares\" />
     </ItemGroup>
 
 </Project>

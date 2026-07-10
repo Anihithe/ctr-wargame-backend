@@ -11,8 +11,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Endpoints\" />
-      <Folder Include="Middlewares\" />
+      <Folder Include="Common\" />
+      <Folder Include="DTOs\" />
+      <Folder Include="Features\" />
     </ItemGroup>
 
 </Project>
