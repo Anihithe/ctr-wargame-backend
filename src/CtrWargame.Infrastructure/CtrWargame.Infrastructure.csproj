@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CtrWargame.Application\CtrWargame.Application.csproj" />
+      <ProjectReference Include="..\CtrWargame.Domain\CtrWargame.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
