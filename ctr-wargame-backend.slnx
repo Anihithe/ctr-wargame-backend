@@ -5,4 +5,7 @@
     <Project Path="src/CtrWargame.Infrastructure/CtrWargame.Infrastructure.csproj" />
     <Project Path="src/CtrWargame.WebApi/CtrWargame.WebApi.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CtrWargame.UnitTests/CtrWargame.UnitTests.csproj" />
+  </Folder>
 </Solution>
