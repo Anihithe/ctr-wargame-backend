@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CtrWargame.Application.Common;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,6 +12,8 @@ public static class ServiceExtentions
         services.AddDbContext<CtrWargameDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"),
                 b => b.MigrationsAssembly(typeof(CtrWargameDbContext).Assembly.FullName)));
+
+        services.AddScoped<ICtrWargameDbContext, CtrWargameDbContext>();
 
         return services;
     }

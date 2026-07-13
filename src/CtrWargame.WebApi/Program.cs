@@ -1,3 +1,5 @@
+using CtrWargame.Application.Common.Messaging;
+using CtrWargame.Application.Features;
 using CtrWargame.WebApi.ServiceExtentions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +16,12 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+
+app.MapPost("/ping", async (PingQuery query, IMediator mediator, CancellationToken cancellationToken) =>
+{
+    var response = await mediator.SendAsync(query, cancellationToken);
+    return Results.Ok(response);
+});
 
 app.UseHttpsRedirection();
 
