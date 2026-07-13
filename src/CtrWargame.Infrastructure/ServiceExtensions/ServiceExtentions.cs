@@ -1,6 +1,6 @@
 ﻿using CtrWargame.Infrastructure.Persistence;
 using CtrWargame.Infrastructure.Persistence.ServiceExtentions;
-using CtrWargame.Infrastructure.Servicies.Messaging.ServiceExtentions;
+using CtrWargame.Infrastructure.Services.Messaging.ServiceExtentions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

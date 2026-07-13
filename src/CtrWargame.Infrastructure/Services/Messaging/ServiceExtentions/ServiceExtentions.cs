@@ -3,7 +3,7 @@ using CtrWargame.Application.Common.Messaging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CtrWargame.Infrastructure.Servicies.Messaging.ServiceExtentions;
+namespace CtrWargame.Infrastructure.Services.Messaging.ServiceExtentions;
 
 public static class ServiceExtentions
 {
