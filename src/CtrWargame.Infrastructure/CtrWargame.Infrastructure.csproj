@@ -24,4 +24,11 @@
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Persistence\StaticData\allegiances.json" />
+      <EmbeddedResource Include="Persistence\StaticData\allegiances.json" />
+      <None Remove="Persistence\StaticData\factions.json" />
+      <EmbeddedResource Include="Persistence\StaticData\factions.json" />
+    </ItemGroup>
+
 </Project>

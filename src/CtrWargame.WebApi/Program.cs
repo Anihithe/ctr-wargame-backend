@@ -1,6 +1,6 @@
 using CtrWargame.Application.Common.Messaging;
 using CtrWargame.Application.Features;
-using CtrWargame.WebApi.ServiceExtentions;
+using CtrWargame.WebApi.ServiceExtensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -3,9 +3,9 @@ using CtrWargame.Application.Common.Messaging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CtrWargame.Infrastructure.Services.Messaging.ServiceExtentions;
+namespace CtrWargame.Infrastructure.Services.Messaging.ServiceExtensions;
 
-public static class ServiceExtentions
+public static class ServiceExtensions
 {
     public static IServiceCollection AddMessaging(this IServiceCollection services, IConfiguration configuration)
     {

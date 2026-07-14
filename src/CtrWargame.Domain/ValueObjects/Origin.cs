@@ -1,3 +1,3 @@
 ﻿namespace CtrWargame.Domain.ValueObjects;
 
-public record Origin(Guid Id, string Name, string Description);
+public record Origin(string Name, string Description);

@@ -2,15 +2,15 @@
 
 public class Characteristics
 {
-    public int HealthPoint { get; init; }
+    public int HealthPoints { get; init; }
     public int Movement { get; init; }
     public int Combat { get; init; } 
     public int Dodge { get; init; } 
     public int? Will { get; init; }
 
-    public Characteristics(int healthPoint, int movement, int combat, int dodge, int? will = null)
+    public Characteristics(int healthPoints, int movement, int combat, int dodge, int? will = null)
     {
-        if (healthPoint <= 0)
+        if (healthPoints <= 0)
             throw new ArgumentException("Health point must be greater than zero");
         if (movement <= 0)
             throw new ArgumentException("Movement must be greater than zero");
@@ -21,7 +21,7 @@ public class Characteristics
         if (will <= 0)
             throw new ArgumentException("Will must be greater than zero");
         
-        HealthPoint = healthPoint;
+        HealthPoints = healthPoints;
         Movement = movement;
         Combat = combat;
         Dodge = dodge;

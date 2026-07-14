@@ -14,12 +14,12 @@ public class MediatorTests
     public void Setup()
     {
         _executionLog = [];
-        var services = new ServiceCollection();
-        services.AddScoped<IMediator, Mediator>();
-        services.AddSingleton(_executionLog);
-        services.AddTransient<IPipelineBehavior<TestRequest, TestResponse>, FirstTestBehavior>();
-        services.AddTransient<IPipelineBehavior<TestRequest, TestResponse>, SecondTestBehavior>();
-        services.AddTransient<IRequestHandler<TestRequest, TestResponse>, TestRequestHandler>();
+        var services = new ServiceCollection()
+        .AddScoped<IMediator, Mediator>()
+        .AddSingleton(_executionLog)
+        .AddTransient<IPipelineBehavior<TestRequest, TestResponse>, FirstTestBehavior>()
+        .AddTransient<IPipelineBehavior<TestRequest, TestResponse>, SecondTestBehavior>()
+        .AddTransient<IRequestHandler<TestRequest, TestResponse>, TestRequestHandler>();
 
         _serviceProvider = services.BuildServiceProvider();
         _mediator = _serviceProvider.GetRequiredService<IMediator>();

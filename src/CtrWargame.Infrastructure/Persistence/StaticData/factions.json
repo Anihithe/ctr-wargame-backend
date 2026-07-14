@@ -1,0 +1,415 @@
+﻿[
+  
+{
+  "id": 1,
+  "name": "L'Alliance",
+  "baseProfiles": {
+    "1": {
+      "healthPoints": 6,
+      "movement": 6,
+      "combat": 3,
+      "dodge": 2,
+      "will": 4
+    },
+    "2": {
+      "healthPoints": 7,
+      "movement": 6,
+      "combat": 4,
+      "dodge": 3,
+      "will": 5
+    },
+    "3": {
+      "healthPoints": 8,
+      "movement": 6,
+      "combat": 5,
+      "dodge": 4,
+      "will": 6
+    }
+  },
+  "specialRules": ["Polyvalent"],
+  "origins" : [
+    {
+      "name" : "Cité développée",
+      "description" : "Les combattants de cette faction bénéficient de la catégorie 'Technologie avancée'"
+    },
+    {
+      "name" : "Inquisition",
+      "description" : "Une fois par tour, vous pouvez relancer un jet d'attaque contre les Combattants non joueurs"
+    },
+    {
+      "name" : "Célestes",
+      "description" : "Vos Officiers bénéficient de la règle spéciale 'Vol/bond'"
+    },
+    {
+      "name" : "Académie militaire",
+      "description" : "Si au moins 2 Combattants attaquent simultanément au corps à corps un ennemi (via une Activation groupée), ils bénéficient d'un bonus de +1 dé d'attaque"
+    },
+    {
+      "name" : "Chef d'armée",
+      "description" : "Votre Leader obtient gratuitement la Spécialisation du Général"
+    },
+    {
+      "name" : "Noblesse",
+      "description" : "Vos Combattants comptent comme ayant 1 Rang de plus pour la sélection d'une Armure"
+    }
+  ]
+},
+  {
+    "id": 2,
+    "name": "L'Excellence",
+    "baseProfiles": {
+      "1": {
+        "healthPoints": 5,
+        "movement": 6,
+        "combat": 3,
+        "dodge": 2,
+        "will": 4
+      },
+      "2": {
+        "healthPoints": 6,
+        "movement": 6,
+        "combat": 4,
+        "dodge": 3,
+        "will": 5
+      },
+      "3": {
+        "healthPoints": 7,
+        "movement": 6,
+        "combat": 5,
+        "dodge": 4,
+        "will": 6
+      }
+    },
+    "specialRules": ["Clairevoyants", "Réflexes surhumains"],
+    "origins" : [
+      {
+        "name" : "Sylvains",
+        "description" : "Un Combattant ne portant pas de Protection bénéficie, au choix, de la règle spéciale Agile ou d'un bonus de Protection de +1"
+      },
+      {
+        "name" : "Ombres des bois",
+        "description" : "Les Combattants bénéficient d'un bonus d'un dé d'attaque lorsqu'ils effectuent un tir depuis un Couvert"
+      },
+      {
+        "name" : "Gardes royaux",
+        "description" : "Vos Combattants peuvent être équipés normalement de Protection et comptent comme ayant 1 Rang de plus pour la sélection des armes intermédiaires"
+      },
+      {
+        "name" : "Tour d'argent",
+        "description" : "Une fois par tour, vous pouvez relancer un jet pour Lancer un sort"
+      },
+      {
+        "name" : "Peuple des cimes",
+        "description" : "Vos Officiers bénéficient de la règle spéciale 'Vol/bond'"
+      },
+      {
+        "name" : "Forêt noire",
+        "description" : "Les armes de corps à corps de vos Combattants bénéficient de la règle spéciale 'Poison'"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "La Perfidie",
+    "baseProfiles": {
+      "1": {
+        "healthPoints": 5,
+        "movement": 7,
+        "combat": 3,
+        "dodge": 3,
+        "will": 3
+      },
+      "2": {
+        "healthPoints": 6,
+        "movement": 6,
+        "combat": 4,
+        "dodge": 4,
+        "will": 5
+      },
+      "3": {
+        "healthPoints": 7,
+        "movement": 6,
+        "combat": 5,
+        "dodge": 4,
+        "will": 6
+      }
+    },
+    "specialRules": ["Insaisissables"],
+    "origins" : [
+      {
+        "name" : "Savants fous",
+        "description" : "Les Combattants bénéficient de la 'Technologie avancée' mais le bonus est de +1 Puissance. A chaque fois qu'un de vos Combattants utilise une arme de 'Technologie avancée', lancez un dé, sur un résultat de 1 ou 2 le Combattant subit 1 blessure"
+      },
+      {
+        "name" : "Clan de guerriers",
+        "description" : "Vos Combattants bénéficient de la règle spéciale Insaisissable même s'ils portent des Protections"
+      },
+      {
+        "name" : "Maître des Bêtes",
+        "description" : "Désignez un Combattant de votre bande qui n'est pas de type Animal. Les Combattants de type Animal peuvent ajouter 2 dés à leur jet d'attaque s'ils sont à 3\" de ce Combattant. Lancez ces 2 dés séparément, pour chaque réussite, l'Animal subit 1 blessure"
+      },
+      {
+        "name" : "Kamikazes",
+        "description" : "Les Combattants bénéficient de la règle spéciale 'Acrobate'"
+      },
+      {
+        "name" : "Empoisonneurs",
+        "description" : "Les armes de corps à corps de vos Combattants bénéficient de la règle spéciale 'Poison'"
+      },
+      {
+        "name" : "Mutants",
+        "description" : "Vos Officiers gagnent 1 emplacement supplémentaire"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "La Brutalité",
+    "baseProfiles": {
+      "1": {
+        "healthPoints": 6,
+        "movement": 6,
+        "combat": 4,
+        "dodge": 2,
+        "will": 3
+      },
+      "2": {
+        "healthPoints": 7,
+        "movement": 5,
+        "combat": 5,
+        "dodge": 3,
+        "will": 5
+      },
+      "3": {
+        "healthPoints": 8,
+        "movement": 5,
+        "combat": 6,
+        "dodge": 3,
+        "will": 6
+      }
+    },
+    "specialRules": ["Fureur"],
+    "origins" : [
+      {
+        "name" : "Destructeurs",
+        "description" : "Les Combattants de la faction comptent comme ayant 1 Rang de plus pour la sélection des armes de pugilat et lourdes"
+      },
+      {
+        "name" : "Bêtes féroces",
+        "description" : "Les Combattants de type Animal bénéficient de la règle spéciale Fureur et ont +1 PV"
+      },
+      {
+        "name" : "Peuple sauvage",
+        "description" : "Vos Officiers bénéficient de la règle spéciale 'Terreur'"
+      },
+      {
+        "name" : "Traqueurs",
+        "description" : "Les Combattants bénéficient de la règle spéciale 'Discret'"
+      },
+      {
+        "name" : "Brutes volantes",
+        "description" : "Vos Officiers bénéficient de la règle spéciale 'Vol/bond'"
+      },
+      {
+        "name" : "Tribu chamanique",
+        "description" : "Vos Officiers connaissent un sort de niveau 1 et peuvent utiliser l'action Lancer un sort"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "L'Eternité",
+    "baseProfiles": {
+      "1": {
+        "healthPoints": 5,
+        "movement": 5,
+        "combat": 3,
+        "dodge": 2,
+        "will": null
+      },
+      "2": {
+        "healthPoints": 7,
+        "movement": 6,
+        "combat": 4,
+        "dodge": 3,
+        "will": 6
+      },
+      "3": {
+        "healthPoints": 8,
+        "movement": 6,
+        "combat": 5,
+        "dodge": 4,
+        "will": 6
+      }
+    },
+    "specialRules": ["Nécromancie"],
+    "origins" : [
+      {
+        "name" : "Vampires",
+        "description" : "Lorsqu'un Officier infligent des blessures à un Combattant adverse au contact, une fois les dégâts résolus, lancez 1 dé par blessure infligée. Pour chaque réussite (4+), il regagne 1 PV perdu précédemment. Il n’est pas possible de dépasser le nombre de PV de départ."
+      },
+      {
+        "name" : "Goules",
+        "description" : "Vos Combattants de Rang 1 ne peuvent pas porter de Protection. En contrepartie, ils bénéficient d'un bonus de +1 Mouvement et de la règle spéciale 'Agile'"
+      },
+      {
+        "name" : "Nécropole",
+        "description" : "Les Combattants de Rang 1 peuvent être remis en jeu à 6\" de l'Officier ayant lancé le sort Réanimation"
+      },
+      {
+        "name" : "Spectres des cryptes",
+        "description" : "Une fois par tour, désignez un de vos Combattants. Pour ce tour, il bénéficie de la règle spéciale 'Vol/bond', il peut traverser les décors et ignore le malus de terrain difficile. Il ne peut pas terminer son mouvement dans un décors fermé"
+      },
+      {
+        "name" : "Chevaliers noirs",
+        "description" : "Vos Combattants comptent comme ayant 1 Rang de plus pour la sélection d'une Armure"
+      },
+      {
+        "name" : "Morts ailés",
+        "description" : "Vos Officiers bénéficient de la règle spéciale 'Vol/bond'"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "La Tenacité",
+    "baseProfiles": {
+      "1": {
+        "healthPoints": 7,
+        "movement": 5,
+        "combat": 3,
+        "dodge": 2,
+        "will": 4
+      },
+      "2": {
+        "healthPoints": 8,
+        "movement": 5,
+        "combat": 4,
+        "dodge": 3,
+        "will": 5
+      },
+      "3": {
+        "healthPoints": 9,
+        "movement": 5,
+        "combat": 5,
+        "dodge": 3,
+        "will": 6
+      }
+    },
+    "specialRules": ["Runes"],
+    "origins" : [
+      {
+        "name" : "Ingénieurs",
+        "description" : "Les Combattants de cette faction bénéficient de la catégorie 'Technologie avancée'"
+      },
+      {
+        "name" : "Tueurs",
+        "description" : "Un Combattant ne portant pas de Protection bénéficie d'un bonus de +1 Mouvement. De plus, vos Combattant ignore la règle spéciale 'Terreur'"
+      },
+      {
+        "name" : "Compagnie de Fer",
+        "description" : "Vos Combattants comptent comme ayant 1 Rang de plus pour la sélection d'une Armure"
+      },
+      {
+        "name" : "Régiment du Bouclier",
+        "description" : "Si au moins 2 Combattants équipés d'un Bouclier sont au contact l'un de l'autre, ils bénéficient de la règle 'Couvert contre le Tir'"
+      },
+      {
+        "name" : "Maitres des runes",
+        "description" : "Chacun de vos Officiers peut placer autant de Runes que son Rang au cours de la partie"
+      },
+      {
+        "name" : "Stratoport",
+        "description" : "Vos Officiers bénéficient de la règle spéciale 'Vol/bond'"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Les Mercenaires",
+    "baseProfiles": {
+      "1": {
+        "healthPoints": 6,
+        "movement": 6,
+        "combat": 3,
+        "dodge": 2,
+        "will": 4
+      },
+      "2": {
+        "healthPoints": 7,
+        "movement": 6,
+        "combat": 4,
+        "dodge": 3,
+        "will": 5
+      },
+      "3": {
+        "healthPoints": 8,
+        "movement": 6,
+        "combat": 5,
+        "dodge": 4,
+        "will": 6
+      }
+    },
+    "specialRules": ["Épées à louer"],
+    "origins" : [
+      {
+        "name" : "Diversité",
+        "description" : "Vous pouvez sélectionner 2 Origines parmi les autres factions. Ces Origines ne peuvent pas permettre de profiter de la règle spéciale de faction"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "La Monstruosité",
+    "baseProfiles": {
+      "2": {
+        "healthPoints": 7,
+        "movement": 6,
+        "combat": 4,
+        "dodge": 3,
+        "will": 5
+      },
+      "3": {
+        "healthPoints": 8,
+        "movement": 6,
+        "combat": 5,
+        "dodge": 3,
+        "will": 6
+      },
+      "4": {
+        "healthPoints": 1,
+        "movement": 1,
+        "combat": 1,
+        "dodge": 1,
+        "will": 1
+      }
+    },
+    "specialRules": ["Peuple de Colosses"],
+    "origins" : [
+      {
+        "name" : "Gardiens des cavernes",
+        "description" : "Vos Officiers bénéficient de la règle spéciale 'Régénération'"
+      },
+      {
+        "name" : "Créatures des Cieux",
+        "description" : "Vos Officiers bénéficient de la règle spéciale 'Vol/bond'"
+      },
+      {
+        "name" : "Rejetons de l'Abîme",
+        "description" : "Vos Officiers bénéficient de la règle spéciale 'Terreur'"
+      },
+      {
+        "name" : "Bêtes de somme",
+        "description" : "Les Monstres de votre faction peuvent porter un deuxième trésor (sans malus de mouvement supplémentaire)"
+      },
+      {
+        "name" : "Alpha",
+        "description" : "Votre Leader gagne un bonus de +2 PV"
+      },
+      {
+        "name" : "Vétérans",
+        "description" : "Les Monstres de votre faction peuvent être équipés normalement"
+      }
+    ]
+  }
+]

@@ -1,8 +1,8 @@
 ﻿using CtrWargame.Infrastructure.ServiceExtensions;
 
-namespace CtrWargame.WebApi.ServiceExtentions;
+namespace CtrWargame.WebApi.ServiceExtensions;
 
-public static class ServiceExtentions
+public static class ServiceExtensions
 {
     public static IServiceCollection AddWebApi(this IServiceCollection services, IConfiguration configuration)
     {
