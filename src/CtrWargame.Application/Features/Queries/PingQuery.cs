@@ -3,7 +3,7 @@ using CtrWargame.Application.Common.Messaging;
 
 namespace CtrWargame.Application.Features;
 
-public record PingQuery(string Message) :IQuery<PingResponse>;
+public record PingQuery(string Message) : IQuery<PingResponse>;
 
 public record PingResponse(string Message, bool DatabaseConnected, DateTimeOffset Timestamp);
 

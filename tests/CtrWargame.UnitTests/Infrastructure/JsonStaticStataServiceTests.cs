@@ -42,20 +42,20 @@ public class JsonStaticStataServiceTests
             // Validation structurelle d'une faction
             var alliance = factions.FirstOrDefault(f => f.Name == "L'Alliance");
             Assert.NotNull(alliance);
-            Assert.That(alliance.Id, Is.EqualTo(1));
+            Assert.That(alliance!.Id, Is.EqualTo(1));
             Assert.That(alliance.SpecialRules, Contains.Item("Polyvalent"));
             Assert.That(alliance.Origins, Has.Count.EqualTo(6));
             
             // Validation de la valeur null de Volonté pour le Rang 1 de l'Éternité
             var eternite = factions.FirstOrDefault(f => f.Name == "L'Eternité");
             Assert.NotNull(eternite);
-            Assert.True(eternite.BaseProfiles.ContainsKey(1));
+            Assert.True(eternite!.BaseProfiles.ContainsKey(1));
             Assert.Null(eternite.BaseProfiles[1].Will);
             
             // Validation structurelle d'une allégeance
             var phalange = allegiances.FirstOrDefault(a => a.Name == "Phalange");
             Assert.NotNull(phalange);
-            Assert.That(phalange.Type, Is.EqualTo("Corps d'armée"));
+            Assert.That(phalange!.Type, Is.EqualTo("Corps d'armée"));
         }
     }
 }

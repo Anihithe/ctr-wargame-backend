@@ -2,3 +2,11 @@
 Content-Type: application/json
 
 {"message": "Test"}
+
+###
+
+GET https://localhost:7166/api/factions
+
+###
+
+GET https://localhost:7166/api/allegiances

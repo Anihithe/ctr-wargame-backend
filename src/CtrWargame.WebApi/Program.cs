@@ -1,6 +1,7 @@
 using CtrWargame.Application.Common.Messaging;
 using CtrWargame.Application.Features;
 using CtrWargame.WebApi.ServiceExtensions;
+using CtrWargame.WebApi.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,5 +25,5 @@ app.MapPost("/ping", async (PingQuery query, IMediator mediator, CancellationTok
 });
 
 app.UseHttpsRedirection();
-
+app.MapEndpoints();
 app.Run();
